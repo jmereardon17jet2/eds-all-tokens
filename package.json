@@ -26,7 +26,8 @@
   "homepage": "https://github.com/adobe/aem-boilerplate#readme",
   "devDependencies": {
     "@babel/eslint-parser": "7.25.9",
-    "@jet2/designsystem.tokens": "^1.1.0",
+    "@csstools/postcss-sass": "^5.1.1",
+    "@jet2/designsystem.tokens": "^1.2.0",
     "clean-css": "^5.3.3",
     "concurrently": "^9.1.2",
     "diff": "^7.0.0",
