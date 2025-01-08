@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   display: none;
   margin: 0;
@@ -10,21 +9,17 @@ body {
   font: var(--text-body-regular-md);
   letter-spacing: -0.01em;
 }
-
 body.appear {
   display: block;
 }
-
 footer .footer,
 header .header {
   visibility: hidden;
 }
-
 footer .footer[data-block-status='loaded'],
 header .header[data-block-status='loaded'] {
   visibility: visible;
 }
-
 h1,
 h2,
 h3,
@@ -35,7 +30,6 @@ h6 {
   margin-bottom: 1.5rem;
   scroll-margin: 40px;
 }
-
 blockquote,
 dl,
 ol,
@@ -45,41 +39,22 @@ ul {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
 }
-
-code,
-pre {
-  font-size: var(--body-font-size-s);
-}
-
-pre {
-  padding: 16px;
-  border-radius: 8px;
-  background-color: var(--light-color);
-  overflow-x: auto;
-  white-space: pre;
-}
-
 button,
 input,
 select,
 textarea {
   font: inherit;
 }
-
 a:any-link {
   text-decoration: none;
   word-break: break-word;
 }
-
-a:hover,
-.default-content-wrapper a {
-  color: var(--link-hover-color);
-  background: var(--no-variable);
+.default-content-wrapper a,
+a:hover {
   text-decoration: underline;
 }
-
+a.button:any-link,
 button {
-  box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
   text-align: center;
@@ -88,129 +63,100 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border: var(--button-base-border);
   border-radius: var(--button-base-border-radius);
+  background-color: var(--button-primary-default-background-color);
+  color: var(--button-primary-default-text-color);
   box-shadow: var(--button-base-shadow);
   transition: var(--button-base-transition);
 }
-
 a.button.primary,
 button.primary {
   color: var(--button-primary-default-text-color);
   background-color: var(--button-primary-default-background-color);
   border-color: var(--button-primary-default-border-color);
 }
-
 a.button.secondary,
 button.secondary {
   color: var(--button-secondary-default-text-color);
   background-color: var(--button-secondary-default-background-color);
   border-color: var(--button-secondary-default-border-color);
 }
-
 a.button.tertiary,
 button.tertiary {
   color: var(--button-tertiary-default-text-color);
-  background: none;
+  background: transparent;
   border: none;
   box-shadow: none;
   text-decoration: underline 1px;
   text-decoration-skip-ink: auto;
 }
-
 a.button.sm,
 button.sm {
   font: var(--button-sm-text);
   padding: var(--button-sm-padding);
   gap: var(--button-sm-gap);
 }
-
 a.button.md,
 button.md {
   font: var(--button-md-text);
   padding: var(--button-md-padding);
   gap: var(--button-md-gap);
 }
-
 a.button.lg,
 button.lg {
   font: var(--button-lg-text);
   padding: var(--button-lg-padding);
   gap: var(--button-lg-gap);
 }
-
 a.button:focus,
 a.button:hover,
 button:focus,
 button:hover {
-  background-color: var(--link-hover-color);
   cursor: pointer;
 }
-
 button:disabled,
 button:disabled:hover {
-  background-color: var(--light-color);
   cursor: unset;
 }
-
-a.button.secondary,
-button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
-}
-
 main img {
   max-width: 100%;
   width: auto;
   height: auto;
 }
-
 .icon {
   display: inline-block;
   height: 24px;
   width: 24px;
 }
-
 .icon img {
   height: 100%;
   width: 100%;
 }
-
-main > .section {
-  margin: 40px 0;
+main > div {
+  margin: 20px 0;
 }
-
 main > .section > div {
   max-width: 1400px;
   margin: auto;
   padding: 0 24px;
 }
-
-main > .section:first-of-type {
-  margin-top: 0;
-}
-
 main .section.highlight,
 main .section.light {
-  background-color: var(--color-background-info);
+  background-color: var(--color-background-secondary);
   margin-left: auto;
   margin-right: auto;
   max-width: 1400px;
   border-radius: 12px;
   padding: 40px 0;
 }
-
 .text-align-center {
   text-align: center;
 }
-
 .arrow {
   position: relative;
   padding-right: 16px;
   cursor: pointer;
 }
-
 .arrow::after {
   content: '';
   display: inline-block;
@@ -224,7 +170,6 @@ main .section.light {
   border-radius: 0 1px 0 0;
   border-width: 2px 2px 0 0;
 }
-
 .arrow[aria-expanded='true']::after {
   top: unset;
   bottom: 0.5em;

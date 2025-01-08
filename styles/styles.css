@@ -1831,19 +1831,6 @@ ul {
   margin-bottom: 0.25em;
 }
 
-code,
-pre {
-  font-size: var(--body-font-size-s);
-}
-
-pre {
-  padding: 16px;
-  border-radius: 8px;
-  background-color: var(--light-color);
-  overflow-x: auto;
-  white-space: pre;
-}
-
 button,
 input,
 select,
@@ -1858,13 +1845,11 @@ a:any-link {
 
 .default-content-wrapper a,
 a:hover {
-  color: var(--link-hover-color);
-  background: var(--no-variable);
   text-decoration: underline;
 }
 
+a.button:any-link,
 button {
-  box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
   text-align: center;
@@ -1873,8 +1858,9 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border: var(--button-base-border);
   border-radius: var(--button-base-border-radius);
+  background-color: var(--button-primary-default-background-color);
+  color: var(--button-primary-default-text-color);
   box-shadow: var(--button-base-shadow);
   transition: var(--button-base-transition);
 }
@@ -1896,7 +1882,7 @@ button.secondary {
 a.button.tertiary,
 button.tertiary {
   color: var(--button-tertiary-default-text-color);
-  background: none;
+  background: 0 0;
   border: none;
   box-shadow: none;
   text-decoration: underline 1px;
@@ -1928,21 +1914,12 @@ a.button:focus,
 a.button:hover,
 button:focus,
 button:hover {
-  background-color: var(--link-hover-color);
   cursor: pointer;
 }
 
 button:disabled,
 button:disabled:hover {
-  background-color: var(--light-color);
   cursor: unset;
-}
-
-a.button.secondary,
-button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
 }
 
 main img {
@@ -1962,8 +1939,8 @@ main img {
   width: 100%;
 }
 
-main > .section {
-  margin: 40px 0;
+main > div {
+  margin: 20px 0;
 }
 
 main > .section > div {
@@ -1972,13 +1949,9 @@ main > .section > div {
   padding: 0 24px;
 }
 
-main > .section:first-of-type {
-  margin-top: 0;
-}
-
 main .section.highlight,
 main .section.light {
-  background-color: var(--color-background-info);
+  background-color: var(--color-background-secondary);
   margin-left: auto;
   margin-right: auto;
   max-width: 1400px;
