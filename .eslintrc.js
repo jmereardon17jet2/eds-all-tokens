@@ -10,5 +10,5 @@ module.exports = {
     node: true,
     es6: true,
   },
-  ignorePatterns: ['node_modules'],
+  ignorePatterns: ['node_modules', 'scripts/*.js'],
 };
