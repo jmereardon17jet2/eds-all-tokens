@@ -1,4 +1,4 @@
-const stylelintConfig = require('stylelint.config');
+const stylelintConfig = require('./stylelint.config');
 
 module.exports = {
   syntax: 'postcss-scss',
