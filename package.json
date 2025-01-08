@@ -11,7 +11,8 @@
     "lint:watch": "esw . -w --color --quiet",
     "update-tokens": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js && npm run add-tokens",
     "update-tokens:holidays": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme holidays && npm run add-tokens",
-    "add-tokens": "node scripts/utils/add-tokens.js"
+    "add-tokens": "node scripts/utils/add-tokens.js",
+    "new-block": "node scripts/utils/create-block.js"
   },
   "repository": {
     "type": "git",
