@@ -1,0 +1,297 @@
+/* Header and navigation layout */
+header .nav-topbar {
+  background: #bf0000;
+  color: #fff;
+}
+
+header .topbar .default-content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .topbar p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+header .topbar .button-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .topbar .button-container a {
+  padding: var(--button-sm-padding);
+  color: #fff;
+  background: transparent;
+  border: 2px solid;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+header .nav-wrapper {
+  max-width: 1400px;
+  margin: auto;
+  padding-top: var(--spacing-md);
+}
+
+/* Navigation grid */
+header nav {
+  display: grid;
+  grid-template:
+    'hamburger brand tools' 64px
+    'sections sections sections' 1fr / auto 1fr auto;
+  align-items: center;
+  gap: 0 var(--spacing-xl);
+  padding: 0 var(--spacing-xl);
+}
+
+header nav[aria-expanded='true'] {
+  grid-template:
+    'hamburger brand' 64px
+    'sections sections' 1fr
+    'tools tools' 64px / auto 1fr;
+  overflow-y: auto;
+  min-height: 100dvh;
+}
+
+@media (min-width: 900px) {
+  header nav {
+    display: flex;
+  }
+  header nav[aria-expanded='true'] {
+    min-height: 0;
+    overflow: visible;
+  }
+  header nav .nav-hamburger {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* Link styling */
+header nav p {
+  margin: 0;
+  line-height: 1;
+}
+
+header nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hamburger styles */
+header nav .nav-hamburger {
+  grid-area: hamburger;
+  display: flex;
+  align-items: center;
+  height: 22px;
+}
+
+header nav .nav-hamburger button {
+  height: 22px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+
+header nav .nav-hamburger-icon,
+header nav .nav-hamburger-icon::before,
+header nav .nav-hamburger-icon::after {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: currentcolor;
+  border-radius: 2px;
+}
+
+header nav[aria-expanded='false'] .nav-hamburger-icon::before {
+  top: -6px;
+}
+
+header nav[aria-expanded='false'] .nav-hamburger-icon::after {
+  top: 6px;
+}
+
+header nav[aria-expanded='true'] .nav-hamburger-icon {
+  height: 22px;
+}
+
+header nav[aria-expanded='true'] .nav-hamburger-icon::before,
+header nav[aria-expanded='true'] .nav-hamburger-icon::after {
+  width: 24px;
+  transform: rotate(45deg);
+  transform-origin: 2px 1px;
+  top: 3px;
+  left: 1px;
+}
+
+header nav[aria-expanded='true'] .nav-hamburger-icon::after {
+  transform: rotate(-45deg);
+  bottom: 3px;
+}
+
+/* Brand section */
+header .nav-brand {
+  grid-area: brand;
+  display: flex;
+  align-items: center;
+  flex-basis: 13%;
+}
+
+header nav .nav-brand img {
+  max-width: 100%;
+  height: 100%;
+}
+
+/* Sections */
+header nav .nav-sections {
+  grid-area: sections;
+  display: none;
+  visibility: hidden;
+  /* padding: 30px 0; */
+}
+
+header nav[aria-expanded='true'] .nav-sections {
+  display: block;
+  visibility: visible;
+  align-self: start;
+}
+
+header nav .nav-sections ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+header nav .nav-sections ul > li {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+header nav .nav-sections ul > li > ul {
+  margin-top: 0;
+}
+
+header nav .nav-sections ul > li > ul > li {
+  font-weight: 400;
+}
+
+@media (min-width: 900px) {
+  header nav .nav-sections {
+    display: block;
+    visibility: visible;
+    white-space: nowrap;
+  }
+
+  header nav .nav-sections ul {
+    display: flex;
+    gap: 18px;
+    margin: 0;
+  }
+
+  header nav .nav-sections ul > li {
+    position: relative;
+  }
+
+  header nav .nav-sections ul > li > ul {
+    display: none;
+    position: absolute;
+    left: -24px;
+    width: 200px;
+    top: 150%;
+    padding: var(--spacing-lg);
+    white-space: initial;
+  }
+
+  header nav .nav-sections ul > li[aria-expanded='true'] > ul {
+    display: block;
+  }
+
+  header nav .nav-sections ul > li > ul::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 16px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+
+  header nav .nav-sections ul > li > ul > li {
+    padding: 8px 0;
+  }
+}
+
+/* Tools section */
+header nav .nav-tools {
+  grid-area: tools;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+header nav .nav-tools .default-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-tools .default-content-wrapper > p:first-child {
+  font-size: 12px;
+}
+
+header nav .nav-tools .default-content-wrapper a:not(.button) {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: var(--spacing-xs);
+  display: block;
+  text-align: right;
+  color: #444;
+}
+
+/* Button styling */
+header nav .button-container .button {
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px 10px 10px 15px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 var(--spacing-sm);
+  text-decoration: none;
+}
+
+header nav .button-container:nth-of-type(2) .button {
+  font-size: 10px;
+}
+
+header nav .button-container:nth-of-type(4) .button {
+  background: #203240;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid;
+  padding-left: 20px;
+  padding-right: 40px;
+  font-size: 14px;
+}
+
+/* Icons */
+header nav .icon-person {
+  filter: contrast(0) brightness(200%);
+}
+
+header nav .icon-hotel-search {
+  width: 15px;
+  height: 15px;
+}
+
+header nav .icon-person {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
