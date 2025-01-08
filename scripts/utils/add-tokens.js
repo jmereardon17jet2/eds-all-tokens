@@ -1,7 +1,7 @@
 const CleanCSS = require('clean-css');
 const { globSync } = require('glob');
 const fs = require('fs');
-const options = require('cleancss.config');
+const options = require('./cleancss.config');
 
 const tokens = globSync(`styles/tokens/*.css`);
 

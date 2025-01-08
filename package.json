@@ -9,8 +9,8 @@
     "lint:css": "stylelint blocks/**/*.css styles/*.css",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:watch": "esw . -w --color --quiet",
-    "update-tokens": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js && npm run scripts/utils/add-tokens",
-    "update-tokens:holidays": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme holidays && npm run scripts/utils/add-tokens",
+    "update-tokens": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js && npm run add-tokens",
+    "update-tokens:holidays": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme holidays && npm run add-tokens",
     "add-tokens": "node scripts/utils/add-tokens.js"
   },
   "repository": {

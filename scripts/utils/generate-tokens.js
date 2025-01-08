@@ -4,7 +4,7 @@ const fs = require('fs');
 const Diff = require('diff');
 const themeIndex = process.argv.indexOf('--theme');
 const themes = fs.readdirSync('node_modules/@jet2/designsystem.tokens/build/web');
-const options = require('cleancss.config');
+const options = require('./cleancss.config');
 let chosenTheme;
 let cssFiles;
 
