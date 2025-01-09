@@ -3,7 +3,7 @@ const { globSync } = require('glob');
 const fs = require('fs');
 const options = require('./cleancss.config');
 
-const tokens = globSync(`styles/tokens/*.css`);
+const tokens = globSync(`styles/themes/*.css`);
 
 new CleanCSS(options).minify([...tokens, 'styles/base.css'], function (error, output) {
   if (error) {

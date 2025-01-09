@@ -13,7 +13,7 @@ if (themeIndex > -1) chosenTheme = process.argv[themeIndex + 1];
 const createCSSFile = (theme) => {
   cssFiles = globSync(`node_modules/@jet2/designsystem.tokens/build/web/${theme}/*/*.css`);
 
-  if (!fs.existsSync('styles/tokens')) fs.mkdirSync('styles/tokens');
+  if (!fs.existsSync('styles/themes')) fs.mkdirSync('styles/themes');
 
   new CleanCSS(options).minify(cssFiles, function (error, output) {
     if (error) {
@@ -21,15 +21,15 @@ const createCSSFile = (theme) => {
       throw Error(error);
     }
 
-    fs.readFile(`styles/tokens/${theme}.css`, 'utf8', (err, css) => {
+    fs.readFile(`styles/themes/${theme}.css`, 'utf8', (err, css) => {
       if (!err && css) {
         const changes = Diff.diffCss(css, output.styles);
         if (changes.length) console.log(`${changes.length} changes for ${theme} tokens`);
       }
     });
 
-    fs.writeFile(`styles/tokens/${theme}.css`, output.styles, () => true);
-    console.log(`Created tokens css file for ${theme}: styles/tokens/${theme}.css`);
+    fs.writeFile(`styles/themes/${theme}.css`, output.styles, () => true);
+    console.log(`Created tokens css file for ${theme}: styles/themes/${theme}.css`);
   });
 };
 

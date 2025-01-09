@@ -1,5 +1,5 @@
 const fs = require('fs');
-const tokens = fs.readdirSync('styles/tokens').map((file) => `styles/tokens/${file}`);
+const themes = fs.readdirSync('styles/themes').map((file) => `styles/themes/${file}`);
 
 module.exports = {
   plugins: ['stylelint-value-no-unknown-custom-properties'],
@@ -7,9 +7,9 @@ module.exports = {
     'csstools/value-no-unknown-custom-properties': [
       true,
       {
-        importFrom: tokens,
+        importFrom: themes,
       },
     ],
   },
-  ignoreFiles: tokens,
+  ignoreFiles: themes,
 };
