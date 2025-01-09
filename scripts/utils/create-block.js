@@ -40,7 +40,7 @@ function createBlockFiles() {
       }
     });
 
-    fs.openSync(`${BLOCK_DIR}//${blockName}.scss`, 'a');
+    fs.openSync(`${BLOCK_DIR}/${blockName}.scss`, 'a');
 
     console.log(`Block: ${blockName} created!`);
   } catch (err) {
