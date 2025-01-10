@@ -11,6 +11,11 @@
     "lint:watch": "esw . -w --color --quiet",
     "update-tokens": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js",
     "update-tokens:holidays": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme holidays",
+    "update-tokens:city": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme city",
+    "update-tokens:global": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme global",
+    "update-tokens:indulgent": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme indulgent",
+    "update-tokens:vibe": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme vibe",
+    "update-tokens:villas": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme villas",
     "new-block": "node scripts/utils/create-block.js"
   },
   "repository": {
