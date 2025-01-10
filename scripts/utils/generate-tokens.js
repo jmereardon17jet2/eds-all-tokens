@@ -1,7 +1,6 @@
 const CleanCSS = require('clean-css');
 const { globSync } = require('glob');
 const fs = require('fs');
-const Diff = require('diff');
 const themeIndex = process.argv.indexOf('--theme');
 const themes = fs.readdirSync('node_modules/@jet2/designsystem.tokens/build/web');
 const options = require('./cleancss.config');
@@ -20,13 +19,6 @@ const createCSSFile = (theme) => {
       console.log('Failed to compile CSS, check reference file path and that theme exists');
       throw Error(error);
     }
-
-    fs.readFile(`styles/themes/${theme}.css`, 'utf8', (err, css) => {
-      if (!err && css) {
-        const changes = Diff.diffCss(css, output.styles);
-        if (changes.length) console.log(`${changes.length} changes for ${theme} tokens`);
-      }
-    });
 
     fs.writeFile(`styles/themes/${theme}.css`, output.styles, () => true);
     console.log(`Created tokens css file for ${theme}: styles/themes/${theme}.css`);
