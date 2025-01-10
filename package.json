@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/adobe/aem-boilerplate#readme",
   "devDependencies": {
+    "@adobe/aem-cli": "^16.8.6",
     "@babel/eslint-parser": "7.25.9",
     "@csstools/postcss-sass": "^5.1.1",
     "@jet2/designsystem.tokens": "^1.2.0",
@@ -38,6 +39,7 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-watch": "^8.0.0",
     "glob": "^11.0.0",
+    "ncu": "^0.2.1",
     "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
