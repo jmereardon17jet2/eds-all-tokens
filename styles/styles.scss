@@ -4,6 +4,15 @@
   size-adjust: 104.57%;
   src: local('Arial');
 }
+
+@import url('./themes/global.css');
+@import url('./themes/city.css');
+@import url('./themes/flights.css');
+@import url('./themes/indulgent.css');
+@import url('./themes/vibe.css');
+@import url('./themes/villas.css');
+@import url('./themes/holidays.css');
+
 * {
   box-sizing: border-box;
 }
