@@ -9,6 +9,7 @@ module.exports = {
     require('@csstools/postcss-sass')({
       silenceDeprecations: ['legacy-js-api'],
     }),
+    require('postcss-import'),
     require('postcss-reporter')({ clearReportedMessages: true }),
   ],
 };
