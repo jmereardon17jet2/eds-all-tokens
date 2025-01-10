@@ -29,4 +29,20 @@ module.exports = {
       removeEmpty: true,
     },
   },
+  plugins: [
+    {
+      level1: {
+        property: function addFallbackFontCSS(_, property) {
+          if (Array.isArray(property.value)) {
+            property.value.forEach((row, i) => {
+              row.forEach((value, j) => {
+                if (value === "'Open Sans'")
+                  property.value[i][j] = "'Open Sans', open-sans-normal-400-fallback";
+              });
+            });
+          }
+        },
+      },
+    },
+  ],
 };
