@@ -1,0 +1,21 @@
+[data-theme='flights'] {
+  --select-base-border-radius: 0.5rem;
+  --select-base-border: 1px solid;
+  --select-base-shadow: 0 1px 2px 0 #1018280d;
+  --select-base-text: 400 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --select-base-padding: 0.563rem 0.813rem;
+  --select-base-gap: 0.5rem;
+  --select-base-transition: 200ms cubic-bezier(0.32, 0.94, 0.6, 1);
+  --select-base-text-color: #0F1729;
+  --select-base-background-color: #ffffff;
+  --select-base-border-color: #657186;
+  --select-base-placeholder-color: #657186;
+  --select-disabled-text-color: #657186;
+  --select-disabled-background-color: #F8F9FC;
+  --select-disabled-border-color: #CFD4DE;
+  --select-focus-border-color: #2F8FF9;
+  --select-error-border-color: #F04339;
+  --select-dropdown-icon-base-width: 1.25rem;
+  --select-dropdown-icon-base-height: 1.25rem;
+  --select-dropdown-icon-base-color: #657186;
+}

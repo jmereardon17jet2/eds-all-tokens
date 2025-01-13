@@ -1,0 +1,9 @@
+[data-theme='city'] {
+  --breadcrumb-base-text: 600 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --breadcrumb-base-gap: 0.75rem;
+  --breadcrumb-divider-width: 1.25rem;
+  --breadcrumb-divider-height: 1.25rem;
+  --breadcrumb-divider-color: #CFD4DE;
+  --breadcrumb-default-text-color: #465568;
+  --breadcrumb-active-text-color: #185BD2;
+}

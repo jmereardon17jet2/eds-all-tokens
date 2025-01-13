@@ -1,0 +1,22 @@
+:root {
+  --badge-base-border: 1px solid;
+  --badge-base-border-radius: 999rem;
+  --badge-base-padding: 0.125rem 10px;
+  --badge-default-background-color: #F8F9FC;
+  --badge-default-border-color: #E9EBF1;
+  --badge-default-text-color: #334155;
+  --badge-yellow-background-color: #FFFAEA;
+  --badge-yellow-border-color: #FEDE88;
+  --badge-yellow-text-color: #B44607;
+  --badge-green-background-color: #ECFDF3;
+  --badge-green-border-color: #A5F3C4;
+  --badge-green-text-color: #017947;
+  --badge-red-background-color: #FEF2F1;
+  --badge-red-border-color: #FECCCC;
+  --badge-red-text-color: #B42219;
+  --badge-blue-background-color: #F0F7FF;
+  --badge-blue-border-color: #B3DCFF;
+  --badge-blue-text-color: #185BD2;
+  --badge-sm-text: 400 0.75rem/1.125rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --badge-md-text: 400 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+}

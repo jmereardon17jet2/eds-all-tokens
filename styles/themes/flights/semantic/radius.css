@@ -1,0 +1,6 @@
+[data-theme='flights'] {
+  --radius-none: 0rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-full: 999rem;
+}

@@ -1,0 +1,16 @@
+[data-theme='holidays'] {
+  --text-heading-xxs: 600 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-heading-xs: 600 1.125rem/1.75rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-heading-sm: 600 1.25rem/1.875rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-heading-md: 600 1.5rem/2rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-heading-lg: 600 1.875rem/2.375rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-heading-xl: 600 2.25rem/2.75rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-heading-2xl: 600 3rem/3.75rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-heading-3xl: 600 3.75rem/4.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-body-regular-sm: 400 0.75rem/1.125rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-body-regular-md: 400 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-body-regular-lg: 400 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-body-strong-sm: 600 0.75rem/1.125rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-body-strong-md: 600 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --text-body-strong-lg: 600 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+}

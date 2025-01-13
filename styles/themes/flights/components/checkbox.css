@@ -1,0 +1,33 @@
+[data-theme='flights'] {
+  --checkbox-base-gap: 0.5rem;
+  --checkbox-control-base-border: 1px solid;
+  --checkbox-control-base-radius: 0.25rem;
+  --checkbox-control-base-margin-top: 0.125rem;
+  --checkbox-control-sm-width: 1rem;
+  --checkbox-control-sm-height: 1rem;
+  --checkbox-control-md-width: 1.25rem;
+  --checkbox-control-md-height: 1.25rem;
+  --checkbox-control-default-background-color: #ffffff;
+  --checkbox-control-default-border-color: #CFD4DE;
+  --checkbox-control-checked-default-background-color: #166FEE;
+  --checkbox-control-checked-default-border-color: #166FEE;
+  --checkbox-control-checked-hover-background-color: #185BD2;
+  --checkbox-control-checked-hover-border-color: #185BD2;
+  --checkbox-control-disabled-background-color: #F8F9FC;
+  --checkbox-control-hover-border-color: #166FEE;
+  --checkbox-control-focused-shadow-inner: 0 0 0 2px #ffffff;
+  --checkbox-control-focused-shadow-outer: 0 0 0 4px #166FEE;
+  --checkbox-icon-default-color: #ffffff;
+  --checkbox-icon-disabled-color: #97A1B4;
+  --checkbox-icon-sm-width: 0.75rem;
+  --checkbox-icon-sm-height: 0.75rem;
+  --checkbox-icon-md-width: 0.875rem;
+  --checkbox-icon-md-height: 0.875rem;
+  --checkbox-label-sm-text: 600 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --checkbox-label-md-text: 600 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --checkbox-label-base-color: #334155;
+  --checkbox-description-sm-text: 400 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --checkbox-description-md-text: 400 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --checkbox-description-md-margin-top: 0.125rem;
+  --checkbox-description-base-color: #465568;
+}

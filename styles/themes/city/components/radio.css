@@ -1,0 +1,33 @@
+[data-theme='city'] {
+  --radio-base-gap: 0.5rem;
+  --radio-control-base-radius: 999rem;
+  --radio-control-base-margin-top: 0.125rem;
+  --radio-control-base-border-color: #CFD4DE;
+  --radio-control-base-border: 1px solid;
+  --radio-control-sm-width: 1rem;
+  --radio-control-sm-height: 1rem;
+  --radio-control-md-width: 1.25rem;
+  --radio-control-md-height: 1.25rem;
+  --radio-control-default-background-color: #ffffff;
+  --radio-control-checked-hover-shadow-sm: inset 0 0 0 4px #185BD2;
+  --radio-control-checked-hover-shadow-md: inset 0 0 0 6px #185BD2;
+  --radio-control-checked-hover-border: none;
+  --radio-control-checked-disabled-indicator-color: #97A1B4;
+  --radio-control-checked-disabled-indicator-width: 0.5rem;
+  --radio-control-checked-disabled-indicator-height: 0.5rem;
+  --radio-control-checked-disabled-indicator-radius: 999rem;
+  --radio-control-checked-default-border: none;
+  --radio-control-checked-default-shadow-sm: inset 0 0 0 4px #166FEE;
+  --radio-control-checked-default-shadow-md: inset 0 0 0 6px #166FEE;
+  --radio-control-disabled-background-color: #F8F9FC;
+  --radio-control-hover-border-color: #166FEE;
+  --radio-control-focused-shadow-inner: 0 0 0 2px #ffffff;
+  --radio-control-focused-shadow-outer: 0 0 0 4px #166FEE;
+  --radio-label-sm-text: 600 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --radio-label-md-text: 600 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --radio-label-base-color: #334155;
+  --radio-description-sm-text: 400 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --radio-description-md-text: 400 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --radio-description-md-margin-top: 0.125rem;
+  --radio-description-base-color: #465568;
+}

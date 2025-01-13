@@ -1,17 +1,16 @@
+@import url('./themes/holidays/semantic/color.css');
+@import url('./themes/holidays/semantic/elevation.css');
+@import url('./themes/holidays/semantic/radius.css');
+@import url('./themes/holidays/semantic/spacing.css');
+@import url('./themes/holidays/semantic/text.css');
+@import url('./themes/holidays/components/button.css');
+
 /* fallback font for Open Sans (normal - 400) */
 @font-face {
   font-family: open-sans-normal-400-fallback;
   size-adjust: 104.57%;
   src: local('Arial');
 }
-
-@import url('./themes/global.css');
-@import url('./themes/city.css');
-@import url('./themes/flights.css');
-@import url('./themes/indulgent.css');
-@import url('./themes/vibe.css');
-@import url('./themes/villas.css');
-@import url('./themes/holidays.css');
 
 * {
   box-sizing: border-box;

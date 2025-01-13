@@ -1,0 +1,32 @@
+[data-theme='vibe'] {
+  --color-text-primary: #0F1729;
+  --color-text-secondary: #334155;
+  --color-text-tertiary: #465568;
+  --color-text-inverse: #ffffff;
+  --color-text-error: #D92C21;
+  --color-text-warning: #DB6702;
+  --color-text-success: #029754;
+  --color-text-info: #166FEE;
+  --color-text-disabled: #97A1B4;
+  --color-border-primary: #CFD4DE;
+  --color-border-secondary: #E9EBF1;
+  --color-border-error: #D92C21;
+  --color-border-warning: #DB6702;
+  --color-border-success: #029754;
+  --color-border-info: #166FEE;
+  --color-icon-primary: #0F1729;
+  --color-icon-secondary: #334155;
+  --color-icon-inverse: #ffffff;
+  --color-icon-error: #D92C21;
+  --color-icon-warning: #DB6702;
+  --color-icon-success: #029754;
+  --color-icon-info: #166FEE;
+  --color-icon-disabled: #97A1B4;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #F8F9FC;
+  --color-background-brand: #2593a7;
+  --color-background-error: #FEF2F1;
+  --color-background-warning: #FFFAEA;
+  --color-background-success: #ECFDF3;
+  --color-background-info: #F0F7FF;
+}

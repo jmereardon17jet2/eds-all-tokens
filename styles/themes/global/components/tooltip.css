@@ -1,0 +1,8 @@
+:root {
+  --tooltip-padding: 0.5rem 0.75rem;
+  --tooltip-border-radius: 0.5rem;
+  --tooltip-background-color: #0F1729;
+  --tooltip-box-shadow: 0 4px 6px -2px #10182808,0 12px 12px #10182814;
+  --tooltip-text: 600 0.75rem/1.125rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --tooltip-text-color: #ffffff;
+}
