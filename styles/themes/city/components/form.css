@@ -1,8 +1,8 @@
 [data-theme='city'] {
-  --form-label-text: 600 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --form-label-text: 600 0.875rem/1.25rem 'Open Sans', open-sans-fallback,sans-serif;
   --form-label-text-color: #334155;
   --form-label-margin-bottom: 0.25rem;
-  --form-message-base-text: 400 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --form-message-base-text: 400 0.875rem/1.25rem 'Open Sans', open-sans-fallback,sans-serif;
   --form-message-base-margin-top: 0.25rem;
   --form-message-default-text-color: #465568;
   --form-message-error-text-color: #F04339;

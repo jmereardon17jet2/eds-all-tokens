@@ -2,7 +2,7 @@
   --textinput-base-border-radius: 0.5rem;
   --textinput-base-border: 1px solid;
   --textinput-base-shadow: 0 1px 2px 0 #1018280d;
-  --textinput-base-text: 400 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --textinput-base-text: 400 1rem/1.5rem 'Open Sans', open-sans-fallback,sans-serif;
   --textinput-base-padding: 0.563rem 0.813rem;
   --textinput-base-transition: 200ms cubic-bezier(0.32, 0.94, 0.6, 1);
   --textinput-default-text-color: #0F1729;

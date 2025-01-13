@@ -23,11 +23,11 @@
   --checkbox-icon-sm-height: 0.75rem;
   --checkbox-icon-md-width: 0.875rem;
   --checkbox-icon-md-height: 0.875rem;
-  --checkbox-label-sm-text: 600 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
-  --checkbox-label-md-text: 600 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --checkbox-label-sm-text: 600 0.875rem/1.25rem 'Open Sans', open-sans-fallback,sans-serif;
+  --checkbox-label-md-text: 600 1rem/1.5rem 'Open Sans', open-sans-fallback,sans-serif;
   --checkbox-label-base-color: #334155;
-  --checkbox-description-sm-text: 400 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
-  --checkbox-description-md-text: 400 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --checkbox-description-sm-text: 400 0.875rem/1.25rem 'Open Sans', open-sans-fallback,sans-serif;
+  --checkbox-description-md-text: 400 1rem/1.5rem 'Open Sans', open-sans-fallback,sans-serif;
   --checkbox-description-md-margin-top: 0.125rem;
   --checkbox-description-base-color: #465568;
 }

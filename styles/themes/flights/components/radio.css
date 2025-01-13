@@ -23,11 +23,11 @@
   --radio-control-hover-border-color: #166FEE;
   --radio-control-focused-shadow-inner: 0 0 0 2px #ffffff;
   --radio-control-focused-shadow-outer: 0 0 0 4px #166FEE;
-  --radio-label-sm-text: 600 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
-  --radio-label-md-text: 600 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --radio-label-sm-text: 600 0.875rem/1.25rem 'Open Sans', open-sans-fallback,sans-serif;
+  --radio-label-md-text: 600 1rem/1.5rem 'Open Sans', open-sans-fallback,sans-serif;
   --radio-label-base-color: #334155;
-  --radio-description-sm-text: 400 0.875rem/1.25rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
-  --radio-description-md-text: 400 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --radio-description-sm-text: 400 0.875rem/1.25rem 'Open Sans', open-sans-fallback,sans-serif;
+  --radio-description-md-text: 400 1rem/1.5rem 'Open Sans', open-sans-fallback,sans-serif;
   --radio-description-md-margin-top: 0.125rem;
   --radio-description-base-color: #465568;
 }

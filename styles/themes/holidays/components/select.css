@@ -2,7 +2,7 @@
   --select-base-border-radius: 0.5rem;
   --select-base-border: 1px solid;
   --select-base-shadow: 0 1px 2px 0 #1018280d;
-  --select-base-text: 400 1rem/1.5rem 'Open Sans', open-sans-normal-400-fallback,sans-serif;
+  --select-base-text: 400 1rem/1.5rem 'Open Sans', open-sans-fallback,sans-serif;
   --select-base-padding: 0.563rem 0.813rem;
   --select-base-gap: 0.5rem;
   --select-base-transition: 200ms cubic-bezier(0.32, 0.94, 0.6, 1);
