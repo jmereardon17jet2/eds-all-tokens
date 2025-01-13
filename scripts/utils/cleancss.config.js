@@ -37,7 +37,7 @@ module.exports = {
             property.value.forEach((row, i) => {
               row.forEach((value, j) => {
                 if (value === "'Open Sans'")
-                  property.value[i][j] = "'Open Sans', open-sans-normal-400-fallback";
+                  property.value[i][j] = "'Open Sans', open-sans-fallback";
               });
             });
           }
