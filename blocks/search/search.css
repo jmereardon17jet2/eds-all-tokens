@@ -1,0 +1,90 @@
+.search.block {
+  background: var(--color-background-brand);
+  color: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 0 var(--spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+
+  form {
+    padding: 12px 0 70px;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    &,
+    div {
+      display: flex;
+    }
+
+    div {
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+    }
+
+    .field {
+      border: none;
+      padding: 10px 40px 10px 50px;
+      border-radius: 6px;
+
+      &:disabled {
+        background-color: #f9fafb;
+        opacity: 0.1;
+      }
+    }
+
+    select {
+      min-height: 42px;
+    }
+
+    .icon {
+      position: absolute;
+      top: 31px;
+      left: 10px;
+      width: 16px;
+      height: 17px;
+    }
+
+    .icon-take-off {
+      width: 37px;
+      height: 37px;
+      top: 21px;
+      left: 5px;
+    }
+
+    label,
+    .field,
+    #search {
+      font-size: 14px;
+    }
+
+    button {
+      margin: 0;
+      padding: 0.625rem 1rem;
+      border: none;
+    }
+  }
+
+  #airports {
+    position: absolute;
+    top: 63px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: auto;
+
+    option {
+      padding: 0.75rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #98a2b3;
+      }
+    }
+  }
+
+  #filters {
+    display: none;
+  }
+}
