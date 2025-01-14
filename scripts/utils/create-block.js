@@ -1,7 +1,7 @@
 const fs = require('fs');
 const blockName = process.argv[2] || 'new-block';
 const BLOCK_DIR = `blocks/${blockName}`;
-const files = [`${BLOCK_DIR}/${blockName}.js`, `${BLOCK_DIR}/${blockName}.scss`];
+const files = [`${BLOCK_DIR}/${blockName}.js`, `${BLOCK_DIR}/${blockName}.css`];
 
 async function createDirectory(path) {
   fs.mkdirSync(path, (err) => {
@@ -40,7 +40,7 @@ function createBlockFiles() {
       }
     });
 
-    fs.openSync(`${BLOCK_DIR}/${blockName}.scss`, 'a');
+    fs.openSync(`${BLOCK_DIR}/${blockName}.css`, 'a');
 
     console.log(`Block: ${blockName} created!`);
   } catch (err) {
