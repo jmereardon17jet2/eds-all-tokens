@@ -1,5 +1,3 @@
-import { fetchPlaceholders } from '../../scripts/aem.js';
-
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel');
   const slideIndex = parseInt(slide.dataset.slideIndex, 10);
@@ -80,26 +78,10 @@ function showSlide(block, slideIndex = 0) {
   });
 }
 
-function showRecentSearches(recentSearches) {
-  const heroWrapper = document.querySelector('.hero-wrapper');
-  const recentSearchesList = document.createElement('ul');
-  recentSearchesList.className = 'recent-searches';
-  recentSearches.forEach((search) => {
-    const LI = document.createElement('li');
-    const P = document.createElement('p');
-    P.textContent = search.destination;
-    LI.append(P);
-    recentSearchesList.append(LI);
-  });
-  heroWrapper.append(recentSearchesList);
-}
-
 export default async function decorate(block) {
   const rows = block.querySelectorAll(':scope > div');
   const slides = block.querySelectorAll(':scope > div div:first-child');
   const featured = block.querySelectorAll(':scope > div div + div');
-  const placeholders = await fetchPlaceholders();
-  const recentSearches = localStorage.getItem('J2H_SC_RCNT');
 
   const isSingleSlide = slides.length < 2;
 
@@ -113,14 +95,10 @@ export default async function decorate(block) {
     slidesList.classList.add('carousel-slides');
     slideNavButtons.classList.add('carousel-navigation-buttons');
     slideNavButtons.innerHTML = `
-      <button type="button" class="slide-pause" aria-label="${
-        placeholders.pauseSlide || 'Pause Slide'
-      }">||</button>
-      <button type="button" class="slide-prev" aria-label="${
-        placeholders.previousSlide || 'Previous Slide'
-      }"></button>
+      <button type="button" class="slide-pause" aria-label="Pause Slide">||</button>
+      <button type="button" class="slide-prev" aria-label="Previous Slide"></button>
       <span><span class="carousel-slide-number">1</span> / ${rows.length}</span>
-      <button type="button" class="slide-next" aria-label="${placeholders.nextSlide || 'Next Slide'}"></button>
+      <button type="button" class="slide-next" aria-label="Next Slide"></button>
     `;
 
     slides.forEach((slide, index) => {
@@ -136,7 +114,7 @@ export default async function decorate(block) {
 
     block.classList.add('carousel');
     block.setAttribute('role', 'region');
-    block.setAttribute('aria-roledescription', placeholders.carousel || 'Carousel');
+    block.setAttribute('aria-roledescription', 'Carousel');
 
     block.append(container);
 
@@ -151,6 +129,4 @@ export default async function decorate(block) {
   });
 
   block.append(container);
-
-  if (recentSearches) showRecentSearches(JSON.parse(recentSearches));
 }

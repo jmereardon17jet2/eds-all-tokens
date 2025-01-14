@@ -1,5 +1,3 @@
-import { fetchPlaceholders } from '../../scripts/aem.js';
-
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel');
   const slideIndex = parseInt(slide.dataset.slideIndex, 10);
@@ -93,10 +91,8 @@ export default async function decorate(block) {
   const rows = block.querySelectorAll(':scope > div');
   const isSingleSlide = rows.length < 2;
 
-  const placeholders = await fetchPlaceholders();
-
   block.setAttribute('role', 'region');
-  block.setAttribute('aria-roledescription', placeholders.carousel || 'Carousel');
+  block.setAttribute('aria-roledescription', 'Carousel');
 
   const container = document.createElement('div');
   container.classList.add('carousel-slides-container');
@@ -106,10 +102,8 @@ export default async function decorate(block) {
     slideNavButtons.classList.add('carousel-navigation-buttons');
     slideNavButtons.innerHTML = `
       <span><span class="carousel-slide-number">1</span> / ${rows.length}</span>
-      <button type="button" class= "slide-prev" aria-label="${
-        placeholders.previousSlide || 'Previous Slide'
-      }"></button>
-      <button type="button" class="slide-next" aria-label="${placeholders.nextSlide || 'Next Slide'}"></button>
+      <button type="button" class= "slide-prev" aria-label="Previous Slide"></button>
+      <button type="button" class="slide-next" aria-label="Next Slide"></button>
     `;
 
     container.append(slideNavButtons);
