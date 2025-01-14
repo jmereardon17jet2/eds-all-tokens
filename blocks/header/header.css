@@ -3,7 +3,6 @@ header .nav-topbar {
   background: #bf0000;
   color: #fff;
 }
-
 header .topbar .default-content-wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -11,18 +10,15 @@ header .topbar .default-content-wrapper {
   justify-content: space-between;
   align-items: center;
 }
-
 header .topbar p {
   font-size: 20px;
   margin-bottom: 15px;
 }
-
 header .topbar .button-container p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 header .topbar .button-container a {
   padding: var(--button-sm-padding);
   color: #fff;
@@ -33,13 +29,11 @@ header .topbar .button-container a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
-
 header .nav-wrapper {
   max-width: 1400px;
   margin: auto;
   padding-top: var(--spacing-md);
 }
-
 /* Navigation grid */
 header nav {
   display: grid;
@@ -49,13 +43,11 @@ header nav {
   gap: 0 var(--spacing-xl);
   padding: 0 var(--spacing-xl);
 }
-
 header nav[aria-expanded=true] {
   grid-template: "hamburger brand" 64px "sections sections" 1fr "tools tools" 64px/auto 1fr;
   overflow-y: auto;
   min-height: 100dvh;
 }
-
 @media (min-width: 900px) {
   header nav {
     display: flex;
@@ -74,13 +66,11 @@ header nav p {
   margin: 0;
   line-height: 1;
 }
-
 header nav a {
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
-
 /* Hamburger styles */
 header nav .nav-hamburger {
   grid-area: hamburger;
@@ -88,7 +78,6 @@ header nav .nav-hamburger {
   align-items: center;
   height: 22px;
 }
-
 header nav .nav-hamburger button {
   height: 22px;
   margin: 0;
@@ -96,7 +85,6 @@ header nav .nav-hamburger button {
   padding: 0;
   color: inherit;
 }
-
 header nav .nav-hamburger-icon,
 header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {
@@ -107,19 +95,15 @@ header nav .nav-hamburger-icon::after {
   background: currentcolor;
   border-radius: 2px;
 }
-
 header nav[aria-expanded=false] .nav-hamburger-icon::before {
   top: -6px;
 }
-
 header nav[aria-expanded=false] .nav-hamburger-icon::after {
   top: 6px;
 }
-
 header nav[aria-expanded=true] .nav-hamburger-icon {
   height: 22px;
 }
-
 header nav[aria-expanded=true] .nav-hamburger-icon::before,
 header nav[aria-expanded=true] .nav-hamburger-icon::after {
   width: 24px;
@@ -128,12 +112,10 @@ header nav[aria-expanded=true] .nav-hamburger-icon::after {
   top: 3px;
   left: 1px;
 }
-
 header nav[aria-expanded=true] .nav-hamburger-icon::after {
   transform: rotate(-45deg);
   bottom: 3px;
 }
-
 /* Brand section */
 header .nav-brand {
   grid-area: brand;
@@ -141,12 +123,10 @@ header .nav-brand {
   align-items: center;
   flex-basis: 13%;
 }
-
 header nav .nav-brand img {
   max-width: 100%;
   height: 100%;
 }
-
 /* Sections */
 header nav .nav-sections {
   grid-area: sections;
@@ -154,31 +134,25 @@ header nav .nav-sections {
   visibility: hidden;
   /* padding: 30px 0; */
 }
-
 header nav[aria-expanded=true] .nav-sections {
   display: block;
   visibility: visible;
   align-self: start;
 }
-
 header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
 }
-
 header nav .nav-sections ul > li {
   font-weight: 500;
   font-size: 14px;
 }
-
 header nav .nav-sections ul > li > ul {
   margin-top: 0;
 }
-
 header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
-
 @media (min-width: 900px) {
   header nav .nav-sections {
     display: block;
@@ -225,16 +199,13 @@ header nav .nav-tools {
   align-items: center;
   margin-left: auto;
 }
-
 header nav .nav-tools .default-content-wrapper {
   display: flex;
   align-items: center;
 }
-
 header nav .nav-tools .default-content-wrapper > p:first-child {
   font-size: 12px;
 }
-
 header nav .nav-tools .default-content-wrapper a:not(.button) {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -245,7 +216,6 @@ header nav .nav-tools .default-content-wrapper a:not(.button) {
   text-align: right;
   color: #444;
 }
-
 /* Button styling */
 header nav .button-container .button {
   background-color: #fff;
@@ -258,11 +228,9 @@ header nav .button-container .button {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
-
 header nav .button-container:nth-of-type(2) .button {
   font-size: 10px;
 }
-
 header nav .button-container:nth-of-type(4) .button {
   background: #203240;
   color: #fff;
@@ -272,17 +240,14 @@ header nav .button-container:nth-of-type(4) .button {
   padding-right: 40px;
   font-size: 14px;
 }
-
 /* Icons */
 header nav .icon-person {
   filter: contrast(0) brightness(200%);
 }
-
 header nav .icon-hotel-search {
   width: 15px;
   height: 15px;
 }
-
 header nav .icon-person {
   width: 20px;
   height: 20px;
