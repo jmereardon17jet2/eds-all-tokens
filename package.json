@@ -1,6 +1,7 @@
 {
   "name": "@adobe/aem-boilerplate",
   "private": true,
+  "type": "module",
   "version": "1.3.0",
   "description": "Starter project for Adobe Helix",
   "scripts": {
@@ -19,7 +20,8 @@
     "update-tokens:indulgent": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme indulgent",
     "update-tokens:vibe": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme vibe",
     "update-tokens:villas": "ncu @jet2/designsystem.tokens -u && npm install -D && node scripts/utils/generate-tokens.js --theme villas",
-    "new-block": "node scripts/utils/create-block.js"
+    "new-block": "node scripts/utils/create-block.js",
+    "check-token-coverage": "node scripts/utils/token-coverage.js"
   },
   "repository": {
     "type": "git",
