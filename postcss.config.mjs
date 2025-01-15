@@ -1,6 +1,6 @@
-const stylelintConfig = require('./stylelint.config');
+import stylelintConfig from './stylelint.config.mjs';
 
-module.exports = {
+export default {
   map: false,
   syntax: 'postcss-scss',
   plugins: [

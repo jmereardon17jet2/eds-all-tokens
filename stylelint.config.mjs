@@ -1,7 +1,7 @@
-const { globSync } = require('glob');
+import { globSync } from 'glob';
 const tokens = globSync('styles/themes/**/*.css');
 
-module.exports = {
+export default {
   plugins: ['stylelint-value-no-unknown-custom-properties'],
   rules: {
     'csstools/value-no-unknown-custom-properties': [
