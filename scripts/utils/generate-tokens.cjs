@@ -4,7 +4,7 @@ const { globSync } = require('glob');
 const fs = require('fs');
 const themeIndex = process.argv.indexOf('--theme');
 const themes = fs.readdirSync('node_modules/@jet2/designsystem.tokens/build/web');
-const options = require('./cleancss.config');
+const options = require('./cleancss.config.cjs');
 let chosenTheme;
 
 if (themeIndex > -1) chosenTheme = process.argv[themeIndex + 1];
